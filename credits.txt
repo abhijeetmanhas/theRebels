@@ -1,0 +1,4 @@
+(1) https://google.com/imgphp and https://learn.unity.com/project/ruby-s-2d-rpg (for audio) (every asset was taken from here, not from particular website)
+
+(2) Inspired by Real Tournament (A java game, not so popular), Mini Militia and space.
+
