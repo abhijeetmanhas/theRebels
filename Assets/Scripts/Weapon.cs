@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Weapon : MonoBehaviour {
 
@@ -25,6 +27,7 @@ public class Weapon : MonoBehaviour {
 		    if (health <= 0) {
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
+GameObject.FindWithTag("gameover").GetComponent<Text>().text="GAME OVER!";
         }
 	}
     void FixedUpdate()

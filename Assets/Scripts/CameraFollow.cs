@@ -26,8 +26,11 @@ inpos = transform.position;
              transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampTime);
          }
 		*/
+		try{
 		var pos = GameObject.FindWithTag("Player").transform.position;
 		transform.position =new Vector3(pos.x+5.0f, pos.y+2.0f, inpos.z);
+		}
+		catch{}
      
      }
  }
