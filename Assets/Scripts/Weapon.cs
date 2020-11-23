@@ -27,7 +27,7 @@ public class Weapon : MonoBehaviour {
 		    if (health <= 0) {
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
-GameObject.FindWithTag("gameover").GetComponent<Text>().text="GAME OVER!";
+GameObject.FindWithTag("gameover").GetComponent<Text>().text="GAME OVER!\n\n Your Score : " + score.ToString();
         }
 	}
     void FixedUpdate()
